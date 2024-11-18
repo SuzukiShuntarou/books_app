@@ -1,0 +1,25 @@
+<%= form_with(model: user) do |form| %>
+  <div>
+    <%= form.label :Name, style: "display: block" %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div>
+    <%= form.label :Postal_code, style: "display: block" %>
+    <%= form.text_field :postal_code %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :bio, style: "display: block" %>
+    <%= form.text_area :bio %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

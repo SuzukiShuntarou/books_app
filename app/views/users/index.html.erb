@@ -1,0 +1,7 @@
+<h1>index Users</h1>
+<% @users.each do |user| %>
+  <%= user.email %></br>
+<% end %>
+
+<%= link_to 'test画面に遷移', namae_tuki_path %>
+<%= link_to '自身のぺーじに遷移', 'users/sign_in' %>
