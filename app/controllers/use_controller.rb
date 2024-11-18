@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def edit
     @user = current_user
     @user
+    @user #test
   end
 
   def update
